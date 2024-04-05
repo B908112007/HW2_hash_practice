@@ -6,7 +6,6 @@ def count_words(filename):
         for line in file:
             words = line.strip().split()
             for word in words:
-                # 使用哈希表统计每个单词出现的次数
                 if word in word_count:
                     word_count[word] += 1
                 else:
